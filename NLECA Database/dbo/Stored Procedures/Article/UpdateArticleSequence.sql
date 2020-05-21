@@ -1,9 +1,8 @@
 ﻿CREATE PROCEDURE [dbo].[UpdateArticleSequence]
-	@newsletterId INT,
-	@oldArticleSequence INT,
-	@updatedArticleSequence INT,
-	@totalRowsEffected INT OUTPUT
+	@articleId INT,
+	@updatedArticleSequence INT
 AS
+	DECLARE @rowsEffected INT = 0;
 
 SET NOCOUNT OFF
 
@@ -11,6 +10,8 @@ SET NOCOUNT OFF
 
 	SET ArticleSequence = @updatedArticleSequence
 
-	WHERE NewsletterId = @newsletterId AND ArticleSequence = @oldArticleSequence;
+	WHERE ArticleId = @articleId;
 
-	SET @totalRowsEffected = @@ROWCOUNT
+	SET @rowsEffected = @@ROWCOUNT;
+
+	SELECT @rowsEffected;
