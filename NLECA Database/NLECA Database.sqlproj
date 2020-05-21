@@ -94,6 +94,7 @@
     <Build Include="dbo\Stored Procedures\Article\UpdateArticle.sql" />
     <Build Include="dbo\Stored Procedures\Article\DeleteArticle.sql" />
     <Build Include="dbo\TriggerSerilogLogLimit.sql" />
+    <Build Include="dbo\Stored Procedures\Article\UpdateArticleSequence.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.xml" />
