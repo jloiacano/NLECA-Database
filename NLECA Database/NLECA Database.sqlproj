@@ -96,6 +96,8 @@
     <Build Include="dbo\TriggerSerilogLogLimit.sql" />
     <Build Include="dbo\Stored Procedures\Article\UpdateArticleSequence.sql" />
     <Build Include="dbo\Tables\ArticleImages.sql" />
+    <Build Include="dbo\Stored Procedures\Article\CheckIfArticleImageExists.sql" />
+    <Build Include="dbo\Stored Procedures\Article\AddImageToArticleImages.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.xml" />
