@@ -1,6 +1,7 @@
 ﻿CREATE PROCEDURE [dbo].[AddImageToArticleImages]
-	@articleId int = 0,
-	@md5Hash VARCHAR(50),
+	@uploadedByUserId VARCHAR(50),
+	@uploadedByUserName VARCHAR(50),
+	@simpleCheckSum VARCHAR(30),
 	@imageName VARCHAR(50),
 	@imageLocation VARCHAR(200)
 AS
@@ -8,8 +9,8 @@ AS
 BEGIN
 	DECLARE @rowsEffected INT = 0;
 
-	INSERT INTO ArticleImages (ArticleId, Md5Hash, ImageName, ImageLocation)
-	VALUES (@articleId, @md5Hash, @imageName, @imageLocation);
+	INSERT INTO ArticleImages (UploadedByUserId, UploadedByUserName, IsCurrent, SimpleCheckSum, ImageName, ImageLocation)
+	VALUES (@uploadedByUserId, @uploadedByUserName, 1, @simpleCheckSum, @imageName, @imageLocation);
 
 	SET @rowsEffected = @@ROWCOUNT;
 

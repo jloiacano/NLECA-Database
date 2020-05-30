@@ -14,4 +14,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="ArticleText" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="36d20305-decb-46bd-af12-7e1f70069067" ChangeDateTime="05/30/2020 05:46:53">
+    <Property Name="ElementName" Value="[dbo].[ArticleImages].[Md5Hash]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ArticleImages]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="SimpleCheckSum" />
+  </Operation>
 </Operations>

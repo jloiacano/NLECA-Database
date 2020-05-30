@@ -1,8 +1,8 @@
 ﻿CREATE PROCEDURE [dbo].[CheckIfArticleImageExists]
-	@md5 VARCHAR(50)
+	@simpleCheckSum VARCHAR(50)
 AS
 BEGIN
-	SELECT * FROM ArticleImages WHERE Md5Hash = @md5;
+	SELECT * FROM ArticleImages WHERE SimpleCheckSum = @simpleCheckSum AND IsCurrent = 1;
 END
 GO
 	
