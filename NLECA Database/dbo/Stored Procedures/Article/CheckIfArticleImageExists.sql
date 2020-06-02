@@ -3,6 +3,7 @@
 AS
 BEGIN
 	SELECT * FROM ArticleImages WHERE SimpleCheckSum = @simpleCheckSum AND IsCurrent = 1;
+	SELECT @@ROWCOUNT;
 END
 GO
 	

@@ -98,6 +98,9 @@
     <Build Include="dbo\Tables\ArticleImages.sql" />
     <Build Include="dbo\Stored Procedures\Article\CheckIfArticleImageExists.sql" />
     <Build Include="dbo\Stored Procedures\Article\AddImageToArticleImages.sql" />
+    <Build Include="dbo\Stored Procedures\Article\GetArticleImagesInArticles.sql" />
+    <Build Include="dbo\Stored Procedures\Article\GetArticleImagesWithSameCheckSum.sql" />
+    <Build Include="dbo\Stored Procedures\Article\GetAllArticleImages.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.xml" />
