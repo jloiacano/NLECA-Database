@@ -15,7 +15,7 @@ AS
 		FROM ArticleImages AS img
 			LEFT JOIN Articles AS a 
 				ON img.ImageLocation = a.ImageFileLocation
-			JOIN Newsletters AS n 
+			LEFT JOIN Newsletters AS n 
 				ON a.NewsletterId = n.NewsletterId
 
 GRANT EXECUTE ON OBJECT::[dbo].[GetAllArticleImages] TO nlecaApp; 

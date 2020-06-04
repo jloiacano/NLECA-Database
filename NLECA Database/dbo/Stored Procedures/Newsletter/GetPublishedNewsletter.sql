@@ -1,4 +1,12 @@
 ﻿CREATE PROCEDURE [dbo].[GetPublishedNewsletter]
 AS
-	SELECT TOP 1 * FROM Newsletters ORDER BY CreatedDate DESC;
-    --TODO - J - Update select statement to reflect "published"
+
+BEGIN
+
+	SELECT * FROM Newsletters 
+	WHERE IsCurrent = 1;
+
+END
+
+GRANT EXECUTE ON OBJECT::[dbo].[GetPublishedNewsletter] TO nlecaApp; 
+GO

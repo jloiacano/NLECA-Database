@@ -101,6 +101,9 @@
     <Build Include="dbo\Stored Procedures\Article\GetArticleImagesInArticles.sql" />
     <Build Include="dbo\Stored Procedures\Article\GetArticleImagesWithSameCheckSum.sql" />
     <Build Include="dbo\Stored Procedures\Article\GetAllArticleImages.sql" />
+    <Build Include="dbo\Stored Procedures\Article\RemoveArticleImage.sql" />
+    <Build Include="dbo\Stored Procedures\Article\DeleteArticleImage.sql" />
+    <Build Include="dbo\Stored Procedures\Newsletter\PublishNewsletter.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.xml" />
