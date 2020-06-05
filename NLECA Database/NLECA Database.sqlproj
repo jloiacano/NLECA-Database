@@ -104,6 +104,7 @@
     <Build Include="dbo\Stored Procedures\Article\RemoveArticleImage.sql" />
     <Build Include="dbo\Stored Procedures\Article\DeleteArticleImage.sql" />
     <Build Include="dbo\Stored Procedures\Newsletter\PublishNewsletter.sql" />
+    <Build Include="dbo\Stored Procedures\Newsletter\UnpublishNewsletter.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.xml" />
