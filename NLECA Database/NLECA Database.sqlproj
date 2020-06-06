@@ -114,6 +114,7 @@
     <Build Include="dbo\Stored Procedures\Events\GetEventsInDateRange.sql" />
     <Build Include="dbo\Stored Procedures\Events\UpdateEvent.sql" />
     <Build Include="dbo\Stored Procedures\Events\DeleteEvent.sql" />
+    <Build Include="dbo\Stored Procedures\Events\GetAllFutureEvents.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.xml" />
