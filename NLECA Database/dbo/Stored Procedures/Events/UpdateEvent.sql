@@ -13,7 +13,7 @@
 	, @eventHost			VARCHAR(256)
 	, @eventShortDetails	VARCHAR(512)
 	, @eventLongDetails		VARCHAR(MAX)
-	, @eventImageLocation	VARCHAR(256)
+	, @eventImageLocation	VARCHAR(256) = NULL
 AS
 
 	UPDATE Events
@@ -31,7 +31,7 @@ AS
 		, EventHost = @eventHost
 		, EventShortDetails = @eventShortDetails
 		, EventLongDetails = @eventLongDetails
-		, EventImageLocation = @eventImageLocation
+		, EventImageLocation = ISNULL(@eventImageLocation, '')
 	WHERE EventId = @eventId;
 
 	SELECT @@ROWCOUNT;		

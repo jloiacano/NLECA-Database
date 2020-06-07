@@ -4,8 +4,9 @@
 AS
 
 	SELECT * FROM Events AS e
-	WHERE CONVERT(date, @start) BETWEEN CONVERT(date, e.EventDate) AND CONVERT(date, e.EventDateEnd)
-	OR CONVERT(date, @end) BETWEEN CONVERT(date, e.EventDate) AND CONVERT(date, e.EventDateEnd);
+	WHERE (CONVERT(date, @start) BETWEEN CONVERT(date, e.EventDate) AND CONVERT(date, e.EventDateEnd)
+	OR CONVERT(date, @end) BETWEEN CONVERT(date, e.EventDate) AND CONVERT(date, e.EventDateEnd))
+	AND IsPublished = 1;
 
 GRANT EXECUTE ON OBJECT::[dbo].[GetEventsInDateRange] TO nlecaApp; 
 GO
