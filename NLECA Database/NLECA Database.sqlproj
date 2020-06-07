@@ -117,6 +117,7 @@
     <Build Include="dbo\Stored Procedures\Events\GetAllFutureEvents.sql" />
     <Build Include="dbo\Stored Procedures\Events\GetAllPublishedEvents.sql" />
     <Build Include="dbo\Stored Procedures\Events\PublishEvent.sql" />
+    <Build Include="dbo\Stored Procedures\Events\UnpublishEvent.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.xml" />
