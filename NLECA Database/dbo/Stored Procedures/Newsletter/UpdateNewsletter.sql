@@ -5,7 +5,9 @@
 	@memo VARCHAR(256),
 	@displayDate VARCHAR(256),
 	@publishedDate DATETIME,
-	@isCurrent BIT
+	@isCurrent BIT,
+	@eventsStartDate DATETIME,
+	@eventsEndDate DATETIME
 
 AS
 	DECLARE @rowsEffected INT = 0;
@@ -16,7 +18,9 @@ AS
 		Memo = @memo,
 		DisplayDate = @displayDate,
 		PublishedDate = @publishedDate,
-		IsCurrent = @isCurrent
+		IsCurrent = @isCurrent,
+		EventsStartDate = @eventsStartDate,
+		EventsEndDate = @eventsEndDate
 	WHERE NewsletterId = @newsletterId;
 
 	SET @rowsEffected = @@ROWCOUNT;
