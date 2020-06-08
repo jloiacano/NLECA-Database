@@ -129,6 +129,7 @@
     <Build Include="dbo\Stored Procedures\Alert\PublishAlert.sql" />
     <Build Include="dbo\Stored Procedures\Alert\UnpublishAlert.sql" />
     <Build Include="dbo\Stored Procedures\Alert\DeleteAlert.sql" />
+    <Build Include="dbo\Stored Procedures\Alert\GetAllCurrentAlerts.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.xml" />
