@@ -65,6 +65,7 @@
     <Folder Include="dbo\Stored Procedures\Newsletter" />
     <Folder Include="dbo\Stored Procedures\Article" />
     <Folder Include="dbo\Stored Procedures\Events" />
+    <Folder Include="dbo\Stored Procedures\Alert" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\__EFMigrationsHistory.sql" />
@@ -118,6 +119,16 @@
     <Build Include="dbo\Stored Procedures\Events\GetAllPublishedEvents.sql" />
     <Build Include="dbo\Stored Procedures\Events\PublishEvent.sql" />
     <Build Include="dbo\Stored Procedures\Events\UnpublishEvent.sql" />
+    <Build Include="dbo\Tables\Alerts.sql" />
+    <Build Include="dbo\Stored Procedures\Alert\AddAlert.sql" />
+    <Build Include="dbo\Stored Procedures\Alert\GetAlertById.sql" />
+    <Build Include="dbo\Stored Procedures\Alert\GetAllAlerts.sql" />
+    <Build Include="dbo\Stored Procedures\Alert\GetAllFutureAlerts.sql" />
+    <Build Include="dbo\Stored Procedures\Alert\GetAllPublishedAlerts.sql" />
+    <Build Include="dbo\Stored Procedures\Alert\UpdateAlert.sql" />
+    <Build Include="dbo\Stored Procedures\Alert\PublishAlert.sql" />
+    <Build Include="dbo\Stored Procedures\Alert\UnpublishAlert.sql" />
+    <Build Include="dbo\Stored Procedures\Alert\DeleteAlert.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Local.publish.xml" />
